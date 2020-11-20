@@ -1,0 +1,26 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    text-align: center;
+}
+.contenedor {
+    height: 190px;
+    background-color: #78BBCB;
+    border-radius: 8px;
+    padding: 5vh 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background: url(jebus.gif) center/contain no-repeat;
+    margin: 0 5px;
+}
+.contenedor.inline .item {
+    display: inline-block;
+}
+.contenedor.block .item {
+    display: block;
+}

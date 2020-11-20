@@ -1,0 +1,10 @@
+.contenedor {
+}
+
+.item {
+    margin: 20px auto 200px auto; /* shorthand margin */
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-left: auto;
+}
