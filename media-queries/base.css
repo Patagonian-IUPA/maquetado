@@ -1,0 +1,14 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    text-align: center;
+}
+.contenedor {
+    background-color: #78BBCB;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
