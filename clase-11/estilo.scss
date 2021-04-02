@@ -1,0 +1,44 @@
+// declaración de variables
+$font-stack: Verdana, sans-serif;
+$link-size: 1.3em;
+$link-color: #fff;
+$color-bottom: #6dd5ed;
+$color-top: #2193b0;
+
+body {
+  margin: 0;
+  background-color: $color-bottom;
+}
+
+// Uso de "anidación" en SASS.
+// Es importante aclarar que el uso de anidaciones
+// es opcional, también podríamos declarar los estilos
+// uno sobre otro como lo hacemos en css plano.
+// Recordar que cualquier CSS valido, es también SASS valido.
+nav {
+  padding: 0.8em 0.5em;
+  background: linear-gradient(to bottom, $color-top, $color-bottom);
+  box-shadow: 0px 3px 6px -5px rgba(0, 0, 0, 0.5);
+  ul {
+    margin: 0;
+    font-family: $font-stack;
+    list-style: none;
+    li {
+      margin: 0.5em;
+      display: inline-block;
+
+      a {
+        color: $link-color;
+        font-size: $link-size;
+        text-decoration: none;
+        // uso de "ampersand" para agregar un estilo
+        // especial que aplica al tag `a` cuando el puntero
+        // del mouse se posa sobre él.
+        // El resultado puede quedará como `a:hover {...}`.
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
 # FyMW - Clase 10
 
-> Grabación:
-> https://drive.google.com/file/d/1UxCECrO8JX5qwt9JIrWn_ELMixvUCV9R/view
+- Slides: n/a.
+- Grabación:
+  https://drive.google.com/file/d/1UxCECrO8JX5qwt9JIrWn_ELMixvUCV9R/view
 
 En la clase 10 de la materia Frontend y Maquetado Web repasamos las partes más
 importantes de la última clase del año pasado ([ver slides clase
