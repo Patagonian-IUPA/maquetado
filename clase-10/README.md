@@ -1,9 +1,13 @@
 # FyMW - Clase 10
 
+> Grabación:
+> https://drive.google.com/file/d/1UxCECrO8JX5qwt9JIrWn_ELMixvUCV9R/view
+
 En la clase 10 de la materia Frontend y Maquetado Web repasamos las partes más
 importantes de la última clase del año pasado ([ver slides clase
 anterior][slides-clase-09], [ver video clase anterior][video-clase-09]) sobre
-media queries.
+media queries. Y luego continuamos con lo que nos quedaba por ver sobre Media
+Queries.
 
 ## Demo
 
