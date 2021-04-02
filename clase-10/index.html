@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 10 | FyMW | CSS Media Queries</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    blockquote {
+      margin: 0;
+    }
+
+    .container {
+      background: linear-gradient(to top, #ff9966, #ff5e62);
+      color: white;
+      padding: 1em;
+      font-size: 1.6em;
+      height: 100vh;
+    }
+
+    .credits {
+      margin-top: 1em;
+      font-size: 0.7em;
+    }
+
+    .credits,
+    a {
+      color: white;
+    }
+
+    @media screen and (min-width: 375px) {
+      .container {
+        font-size: 2em;
+        background: linear-gradient(to bottom, #89253e, #3a6186);
+      }
+    }
+
+    @media screen and (min-width: 425px) {
+      .container {
+        font-size: 2.5em;
+        background: linear-gradient(to bottom, #556270, #4ecdc4);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .container {
+        font-size: 2.5em;
+        background: linear-gradient(to bottom, #fd746c, #2c3e50);
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .container {
+        font-size: 3.5em;
+        background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      .container {
+        font-size: 4.5em;
+        background: linear-gradient(to top, #a8e063, #56ab2f);
+      }
+    }
+
+    @media (min-width: 2560px) {
+      .container {
+        font-size: 5.5em;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <blockquote>
+        “CSS out here trying to do graphic design of unknown content on an
+        infinite and unknown canvas, across operating systems, interfaces, &
+        languages. There’s no possible way for any of us to know what we’re
+        doing.”
+      </blockquote>
+      <div class="credits">
+        Gradients are from
+        <a href="https://uigradients.com/">uigradients.com</a> 😍
+      </div>
+    </div>
+  </body>
+</html>
