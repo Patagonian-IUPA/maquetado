@@ -1,0 +1,39 @@
+// No es posible conseguir el resultado deseado usando `display: inline`.
+// Los elementos adquieren un comportamiento más propio del texto y no como cajas.
+// Los elementos `article` no responden al width dado, y pasan cosas extrañas si
+// les asignamos `padding` o `margin`.
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+
+  .posts {
+    article {
+      &:nth-child(1) {
+        background-color: silver;
+      }
+
+      &:nth-child(2) {
+        background-color: wheat;
+      }
+
+      &:nth-child(3) {
+        background-color: thistle;
+      }
+      &:nth-child(4) {
+        background-color: slategray;
+      }
+
+      display: inline;
+
+      // los elementos no responden al ancho especificado
+      width: 50%;
+
+      // los elementos no precentan margin top ni bottom
+      // aunque agregan un espacio entre cada párrafo.
+      margin: 50px;
+
+      // DESCOMENTAR la siguiente linea para ver lo que sucede en el caso del padding:
+      // padding: 20px;
+    }
+  }
+}

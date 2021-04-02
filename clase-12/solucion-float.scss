@@ -1,0 +1,39 @@
+// Usando `float: left` es posible conseguir el resultado pero genera el problema
+// de que si el contenedor `.post` ocupa menos del 100% del viewport, los elementos
+// que se encuentran por debajo de `.post` y que esperamos que visualmente se ubiquen
+// por debajo de post en realidad se "colapsan" quedando ubicados junto a los elementos article.
+// Esto sucede, porque los elementos float no reportan información acerca de sus dimensiones a
+// su elemento contenedor, por lo tanto el elemento contenedor (`.post`) no puede contenerlos,
+// no puede estirace para encerrarlos.
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+
+  .posts {
+    // si descomentamos las dos lineas siguientes el problema se arregla.
+    width: 75%;
+    // este borde es solo para demostrar que `.post` se colapsa
+    // al no poder encerrar a los elementos article.
+    border: 20px solid black;
+
+    article {
+      &:nth-child(1) {
+        background-color: silver;
+      }
+
+      &:nth-child(2) {
+        background-color: wheat;
+      }
+
+      &:nth-child(3) {
+        background-color: thistle;
+      }
+      &:nth-child(4) {
+        background-color: slategray;
+      }
+
+      float: left;
+      width: 50%;
+    }
+  }
+}

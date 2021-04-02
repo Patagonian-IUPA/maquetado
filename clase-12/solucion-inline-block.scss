@@ -1,0 +1,39 @@
+// Usando `display: inline-block` es posible conseguir el resultado deseado pero parcialmente.
+// No podemos darle un width de exactamente 50% a los elementos
+// article, porque existe un espacio entre ellos que hace que la suma total
+// de más del 100% (50% + 50% + un pequeño porcentaje generado por ese espacio).
+// El espacio entre medio es parte de la herencia del comportamiento inline. Recordemos
+// que display: inline-block hereda algo del comportamiento block (cajas) y algo del
+// comportamiento inline (texto).
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+
+  .posts {
+    article {
+      &:nth-child(1) {
+        background-color: silver;
+      }
+
+      &:nth-child(2) {
+        background-color: wheat;
+      }
+
+      &:nth-child(3) {
+        background-color: thistle;
+      }
+      &:nth-child(4) {
+        background-color: slategray;
+      }
+
+      display: inline-block;
+
+      // para lograr dos columnas tenemos que darle
+      // un ancho menor al 50%. Si le damos exactamente 50%
+      // los elementos pasan a la siguiente linea dado que
+      // existe un espacio entre elementos que no se puede
+      // remover (heredado del comportamiento inline)
+      width: 48%;
+    }
+  }
+}
