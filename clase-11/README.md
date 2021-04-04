@@ -26,11 +26,11 @@ En esta clase comenzamos a aprender SASS.
 ## Demo
 
 Un demo simple que muestra el uso de variables y la forma de anidar
-declaraciones de estilo (ver [estilos.scss](estilos.scss) y
+declaraciones de estilo (ver [estilo.scss](estilo.scss) y
 [index.html](index.html)).
 
 Para poder ver la demo es necesario usar las extensiones VSCode "Live Sass
-Compiler" (glenn2223.live-sass) para compilar el archivo `estilos.scss` y luego
+Compiler" (glenn2223.live-sass) para compilar el archivo `estilo.scss` y luego
 "Live Server" (ritwickdey.liveserver) para servir el archivo
 [index.html](index.html) desde nuestro localhost.
 
