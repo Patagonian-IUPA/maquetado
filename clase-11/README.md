@@ -8,7 +8,7 @@ En esta clase comenzamos a aprender SASS.
 - Extensiones VSCode:
   - **syler.sass-indented** (Sass) - Agrega soporte para la sintaxis SASS en
     VSCode.
-  - **ritwickdey.live-sass** (Live Sass Compiler) - Convierte archivos `.sass` o
+  - **glenn2223.live-sass** (Live Sass Compiler) - Convierte archivos `.sass` o
     `.scss` a archivos `.css`.
   - **ritwickdey.liveserver** (Live Server) - Para poder servir el index.html
     desde nuestro localhost y ver el resultado en el browser.
@@ -30,7 +30,7 @@ declaraciones de estilo (ver [estilos.scss](estilos.scss) y
 [index.html](index.html)).
 
 Para poder ver la demo es necesario usar las extensiones VSCode "Live Sass
-Compiler" (ritwickdey.live-sass) para compilar el archivo `estilos.scss` y luego
+Compiler" (glenn2223.live-sass) para compilar el archivo `estilos.scss` y luego
 "Live Server" (ritwickdey.liveserver) para servir el archivo
 [index.html](index.html) desde nuestro localhost.
 
