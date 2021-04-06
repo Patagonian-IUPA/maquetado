@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap");
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Raleway, Courier, monospace;
+    font-size: 18px;
 }
 h1 {
     text-align: center;
@@ -11,6 +15,7 @@ h1 {
     padding: 5vh 0;
     max-width: 800px;
     margin: 0 auto;
+    border: 3px solid;
 }
 .item {
     width: 100px;
